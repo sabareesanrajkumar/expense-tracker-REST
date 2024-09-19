@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="/index.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+  <h2>Expense Tracker</h2>
+  <button onclick="" id="addExpense">Add Expense</button>
+  <form id="dataForm">
+    <button id="closeBtn">x</button>
+    <input type="hidden" id="recordId" name="recordId"> 
+    <label for="amount">Amount:</label>
+    <input type="number" id="amount"  name="amount" required>
+    <label for="description">Description:</label>
+    <input type="text" id="description" name="description" required>
+    <label for="type">Type:</label>
+    <select name="type" id="type">
+        <option value="" disabled selected>Select type</option>
+        <option value="Health Care">Health Care</option>
+        <option value="Transportation">Transportation</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Entertainment">Entertainment</option>
+    </select>
+    <button type="submit">Submit</button>
+    
+  <script src="index.js"></script>
+  </form>
+
+  <h2>Expense Data</h2>
+  <div id="dataDisplay"></div>
+
+  
+</body>
+</html>
